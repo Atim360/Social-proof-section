@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: top / 100% no-repeat url("images/bg-pattern-top-mobile.svg"), bottom / 100% no-repeat url("images/bg-pattern-bottom-mobile.svg"), hsl(0, 0%, 100%);
+  font-family: 'League Spartan', sans-serif;
+  font-weight: 400;
+}
+
+@media screen and (min-width: 975px) {
+  body {
+    background: top / 100% no-repeat url("images/bg-pattern-top-desktop.svg"), bottom / 100% no-repeat url("images/bg-pattern-bottom-desktop.svg"), hsl(0, 0%, 100%);
+  }
+}
+
+
+/* Main */
+
+.main {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 0px 7%;
+}
+
+@media screen and (min-width: 725px) {
+  .main {
+    padding: 45px 15%;
+  }
+}
+
+@media screen and (min-width: 975px) {
+  .main {
+    padding: 5px 10%;
+    text-align: start;
+  }
+}
+
+.main--title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 2rem;
+  color: hsl(300, 43%, 22%);
+}
+
+@media screen and (min-width: 725px) {
+  .main--title {
+    font-size: 3rem;
+    line-height: 2.6rem;
+  }
+}
+
+.main--paragraph {
+  font-size: 1rem;
+  line-height: 1.3rem;
+  color: hsl(303, 10%, 53%);
+}
+
+@media screen and (min-width: 725px) {
+  .main--paragraph {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+}
+
+.main--font-s1 {
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 725px) {
+  .main--font-s1 {
+    font-size: 1.1rem;
+  }
+}
+
+.main--font-s2 {
+  font-size: 1rem;
+}
+
+.main--color-white {
+  color: hsl(0, 0%, 100%);
+}
+
+.main--color-softpink {
+  color: hsl(333, 80%, 67%);
+}
+
+
+.main--margin-b1 {
+  margin-bottom: 20px;
+}
+
+
+/* Intro */
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  margin: 75px 0px 35px 0px;
+}
+
+@media screen and (min-width: 975px) {
+  .intro {
+    flex-direction: row;
+    margin: 125px 0px 35px 0px;
+  }
+}
+
+
+/* Intro Content */
+
+.intro__content {
+  margin-bottom: 45px;
+}
+
+@media screen and (min-width: 975px) {
+  .intro__content {
+    width: 40%;
+    margin-right: 10%;
+  }
+}
+
+
+/* Intro Opinions */
+
+.intro__opinions {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 975px) {
+  .intro__opinions {
+    width: 60%;
+  }
+}
+
+
+/* Intro Opinion */
+
+.intro__opinion {
+  margin-bottom: 15px;
+  background-color: hsl(300, 24%, 96%);
+  padding: 15px 0px 10px 0px;
+  border-radius: 11px;
+}
+
+@media screen and (min-width: 975px) {
+  .intro__opinion {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15px 5px 10px 5px;
+    max-width: 500px;
+  }
+  .intro__opinion:nth-child(2) {
+    transform: translate3d(7.5%, 0, 0);
+  }
+  .intro__opinion:nth-child(3) {
+    transform: translate3d(15%, 0, 0);
+  }
+}
+
+
+/* Intro Opinion Rate  */
+
+.intro__opinionRate > img {
+  margin: 0px 2px 2px 0px;
+}
+
+@media screen and (min-width: 975px) {
+  .intro__opinionRate {
+    margin: 0 5% 0 6%;
+  }
+}
+
+
+/* Cards Container */
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 65px;
+}
+
+@media screen and (min-width: 975px) {
+  .cards {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+/* Card */
+
+.cards__card {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  background-color: hsl(300, 43%, 22%);
+  border-radius: 11px;
+  padding: 30px 8%;
+}
+
+@media screen and (min-width: 975px) {
+  .cards__card {
+    width: 30%;
+    padding: 30px 3%;
+  }
+  .cards__card:nth-child(2) {
+    transform: translate3d(0, 25px, 0);
+  }
+  .cards__card:nth-child(3) {
+    transform: translate3d(0, 50px, 0);
+  }
+}
+
+
+/* Card Header */
+
+.cards__cardHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+
+/* Card Header Picture */
+
+.cards__cardHeaderPicture {
+  width: 45px;
+  height: 45px;
+  margin-right: 20px;
+}
+
+.cards__cardHeaderPicture > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+
+/* Card Header Content */
+
+.cards__cardHeaderContent {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+}
+
+.cards__cardHeaderContent > h3 {
+  line-height: 1.15rem;
+}
+
+
+/* Card Content */
+
+.cards__cardContent {
+  color: hsl(0, 0%, 100%);
+  line-height: 1.25rem;
+  text-align: start;
+}
